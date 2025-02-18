@@ -3,8 +3,6 @@
 namespace App\controllers;
 
 use App\Projects;
-use Smarty\Smarty;
-
 class ProjectController
 {
 
