@@ -1,0 +1,130 @@
+/* Impostazioni generali del corpo della pagina */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Contenitore principale dei progetti */
+#progetti-container {
+    display: flex;
+    flex-wrap: wrap; /* Consente di andare a capo quando non c'è più spazio */
+    justify-content: flex-start; /* Allinea gli elementi a sinistra */
+    gap: 20px; /* Spazio tra gli elementi */
+    padding: 20px;
+}
+
+/* Stile per ogni singola card */
+.progetto-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 300px; /* Larghezza fissa per ogni card */
+    transition: transform 0.3s ease;
+}
+
+/* Effetto hover sulla card */
+.progetto-card:hover {
+    transform: scale(1.05);
+}
+
+/* Immagine dentro la card */
+.progetto-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Contenuto della card */
+.progetto-card .content {
+    padding: 15px;
+}
+
+/* Classi per la performance colorata */
+.performance {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.performance.red {
+    color: red;
+}
+
+.performance.yellow {
+    color: darkgoldenrod;
+}
+
+.performance.green {
+    color: green;
+}
+
+
+/* Stile per la Modal */
+.modal {
+    display: none; /* Nascosta di default */
+    position: fixed; /* Posizionamento fisso rispetto alla finestra */
+    z-index: 1; /* Farla apparire sopra il contenuto */
+    left: 0;
+    top: 0;
+    width: 100%; /* Larghezza totale della finestra */
+    height: 100%; /* Altezza totale della finestra */
+    overflow: auto; /* Aggiungi la barra di scorrimento se il contenuto è troppo grande */
+    background-color: rgba(0, 0, 0, 0.4); /* Sfondo semitrasparente */
+}
+
+/* Contenuto della Modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centro la modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Puoi cambiare la larghezza della modal */
+    max-width: 600px; /* Larghezza massima */
+    border-radius: 10px;
+}
+
+/* Stile per l'immagine nella modal */
+#modal-img {
+    width: 100%; /* Imposta la larghezza dell'immagine al 100% del contenitore */
+    height: auto; /* Mantiene la proporzione dell'immagine */
+    object-fit: contain; /* L'immagine si adatta senza essere ritagliata, ma può rimanere con dei margini */
+    max-height: 400px; /* Impostiamo una altezza massima per evitare che l'immagine diventi troppo grande */
+    display: block;
+    margin: 0 auto; /* Centra l'immagine orizzontalmente */
+}
+
+
+/* Stile per il testo nella modal */
+#modal-progetto {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+#modal-performance {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+/* Bottone per chiudere la modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+

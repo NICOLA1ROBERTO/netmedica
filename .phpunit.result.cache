@@ -1,0 +1,1 @@
+{"version":1,"defects":{"tests\\DatabaseTest::testCreateDatabaseIfNotExist":8,"tests\\DatabaseTest::testCreateTableIfNotExist":8,"tests\\DatabaseTest::testInsertData":7},"times":{"tests\\DatabaseTest::testCreateDatabaseIfNotExist":0.007,"tests\\DatabaseTest::testCreateTableIfNotExist":0.057,"tests\\DatabaseTest::testInsertData":0.002}}
